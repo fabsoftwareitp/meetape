@@ -59,6 +59,7 @@ ul.nav-links{
 
 .img-fluid{
     max-width: 100%;
+    padding: 15%;
 }
 
 /* section.about{
@@ -77,11 +78,7 @@ ul.nav-links{
     grid-template-columns: 1fr 1fr;
 }
 
-.image-right-section{
-    padding: 15%;
-}
-
-.text-left-section{
+.text-section{
     display: flex;
     align-self: center;
     padding: 10%;
@@ -130,4 +127,12 @@ ul.nav-links{
 
 .panelist{
     background-color: #EBEBEB;
+}
+
+.event-adress{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.event-adress iframe{
+    width: 100%;
 }
