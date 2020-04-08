@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-.text-center {
-    text-align: center !important;
-}
 
 .header{
     width: 100%;
@@ -84,7 +81,11 @@ ul.nav-links{
 }
 
 .text-white {
-    color:#fff;
+    color:#fff; 
+}
+
+.text-center {
+    text-align: center !important;
 }
 
 .bg-purple {
@@ -186,4 +187,14 @@ ul.nav-links{
 
 .text-margin {
     margin: 20px 0px 40px 0px;
+}
+
+.footer {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+}
+
+.footer p {
+    align-self: center;
 }
