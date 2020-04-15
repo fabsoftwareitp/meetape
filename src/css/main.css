@@ -1,13 +1,24 @@
+:root {
+    --color-white-dark: #EBEBEB;
+    --color-white: white;
+    --color-purple: #3f3d56; 
+    --color-green: #03BD00; 
+}
+
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.bg-purple {
+    background: var(--color-purple);
+}
+
 .header{
     width: 100%;
     height: 100vh;
-    background: #EBEBEB;
+    background: var(--color-white-dark);
 }
 
 .nav{
@@ -19,19 +30,32 @@
 }
 
 .nav .branch-logo{
-    color: #03BD00;
+    color: var(--color-green);
+}
+
+.icon-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.icon-toggle div {
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+    background-color: var(--color-green);
+    transition: all 0.5s ease;
 }
 
 ul.nav-links{
     display: flex;
     list-style: none;
     justify-content: space-around;
-    width: 25%;
+    width: 35%;
 }
 
 .nav-links li.item-nav a{
     text-decoration: none; 
-    color: #03BD00;
+    color: var(--color-green);
     font-weight: bold;
 }
 
@@ -46,6 +70,7 @@ ul.nav-links{
     display: grid;
     grid-column: 1;
 }
+
 .hero-text{
     display: grid;
     grid-column: 2;
@@ -81,17 +106,13 @@ ul.nav-links{
 }
 
 .text-white {
-    color:#fff; 
+    color: var(--color-white); 
 }
 
 .text-center {
     text-align: center !important;
 }
 
-.bg-purple {
-    background: #3f3d56;
-}
-    
 .card-group-in-row{
     height: auto;
     display: grid;
@@ -113,7 +134,7 @@ ul.nav-links{
     display: grid;
     height: 250px;
     margin: 0 auto 50px auto;
-    background: #fff;
+    background: var(--color-white);
     width: 100%;
     border-radius: 30px;
     align-items: center;
@@ -125,7 +146,7 @@ ul.nav-links{
 }
 
 .panelist{
-    background-color: #EBEBEB;
+    background-color: var(--color-white-dark);
 }
 
 .event-adress{
@@ -137,7 +158,7 @@ ul.nav-links{
 }
 
 .form-lecture {
-    background: #fff;
+    background: var(--color-white);
     border-radius: 30px;
     margin: 0 auto 60px auto;
     width: 80%;
@@ -173,7 +194,7 @@ ul.nav-links{
 
 .form-control:focus {
     color: #495057;
-    background-color: #fff;
+    background-color: var(--color-white);
     border-color: #80bdff;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
@@ -197,4 +218,71 @@ ul.nav-links{
 
 .footer p {
     align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height:92vh;
+        top: 8vh;
+        background-color: var(--color-green);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links li.item-nav a {
+        text-decoration: none; 
+        color: var(--color-white);
+        font-weight: bold;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .icon-toggle {
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width:60%;
+    }
+}
+
+.icon-toggle-activate {
+    transform: translateX(0%);
+}
+
+@keyframes NavLinkAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
