@@ -6,6 +6,7 @@
     <title>Meetape</title>
 
     <link rel="stylesheet" href="./src/css/main.css" >
+    <link rel="stylesheet" href="./src/css/responsive.css" >
 </head>
 <body>
     <header class="header">
@@ -32,11 +33,12 @@
         <section class="hero">
             <div class="hero-logo">
                 <img class="img-fluid" src="./src/images/logo.png" alt="Logo do evento Meetape">
-
             </div>
 
             <div class="hero-text">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea itaque qui velit aliquid iure deleniti sint ut nihil doloribus, repellendus, delectus voluptatum eos cum labore ipsa quam sunt laboriosam voluptatibus!</p>
+                <p> Está Chegando!<br> 
+                    <span id="dia"></span> : <span id="hora"></span> : <span id="minuto"></span> : <span id="segundo"></span>
+                </p>
 
             </div>
         </section>
@@ -51,7 +53,7 @@
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatem mollitia qui error praesentium voluptate beatae aspernatur saepe accusantium enim ipsam quas sint nobis, obcaecati libero quia at repellat odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quas, illum nobis, officiis, perferendis expedita autem doloribus vel suscipit aperiam delectus numquam adipisci aspernatur. Ullam voluptates ab reiciendis ipsa nisi!
             </p>
 
-            <img class="img-fluid" src="src/images/img-about.svg">
+            <img class="img-fluid image-section" src="src/images/img-about.svg">
 
 
         </div>
@@ -93,7 +95,7 @@
                     </div>
                 </div>
 
-            <img class="img-fluid" src="src/images/img-panelist.svg">
+            <img class="img-fluid image-section" src="src/images/img-panelist.svg">
 
 
         </div>
@@ -104,7 +106,7 @@
 
         <div class="grid-container-2">
 
-            <img class="img-fluid" src="src/images/img-event-locale.svg">
+            <img class="img-fluid image-section" src="src/images/img-event-locale.svg">
 
             <div class="text-section event-adress">
                     <iframe
@@ -138,7 +140,7 @@
                 </div>
             </form>
             </div>
-            <img class="img-fluid" src="src/images/img-about.svg">
+            <img class="img-fluid image-section" src="src/images/img-about.svg">
         </div>
     </section>
 
@@ -147,6 +149,8 @@
     </footer>
 
     <script src="./src/js/main.js"></script>
+    <script src="./src/js/timer.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 </body>
 </html>
 
