@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla&family=Lobster&family=Roboto:wght@300&display=swap');
+
 :root {
     --color-white-dark: #EBEBEB;
     --color-white: white;
     --color-purple: #3f3d56; 
-    --color-green: #03BD00; 
+    --color-green: #03BD00;
+    --line-height: 150px;
 }
 
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
 }
 
 .bg-purple {
@@ -50,7 +54,7 @@ ul.nav-links{
     display: flex;
     list-style: none;
     justify-content: space-around;
-    width: 35%;
+    width: 50%;
 }
 
 .nav-links li.item-nav a{
@@ -66,15 +70,10 @@ ul.nav-links{
     grid-column-gap: 20px;
 }
 
-.hero-logo{
-    display: grid;
-    grid-column: 1;
+.hero-text{
+    display: flex;
 }
 
-.hero-text{
-    display: grid;
-    grid-column: 2;
-}
 .hero-text p{
     align-self: center;
     font-size: 2rem;
@@ -88,7 +87,7 @@ ul.nav-links{
 }
 
 .section-title {
-    line-height: 150px;
+    line-height: var(--line-height);
     font-size: 3rem;
 
 }
@@ -103,6 +102,7 @@ ul.nav-links{
     align-self: center;
     padding: 10%;
     font-size: 1.5rem;
+    text-align: justify;
 }
 
 .text-white {
@@ -122,7 +122,7 @@ ul.nav-links{
     grid-gap: 50px 50px;
 }
 
-.card-group{
+.card-group {
     height: auto;
     display: grid;
     padding: 2%;
@@ -220,7 +220,7 @@ ul.nav-links{
     align-self: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 890px){
     .nav-links {
         position: absolute;
         right: 0px;
@@ -244,24 +244,23 @@ ul.nav-links{
         font-weight: bold;
     }
 
+    .icon-toggle {
+        display: block;
+    }
+
     body {
         overflow-x: hidden;
     }
 
-    .icon-toggle {
-        display: block;
-    }
-    
+}
+    .icon-toggle-activate {
+        transform: translateX(0%);
 }
 
 @media screen and (max-width: 1024px) {
     .nav-links {
         width:60%;
     }
-}
-
-.icon-toggle-activate {
-    transform: translateX(0%);
 }
 
 @keyframes NavLinkAnimation {

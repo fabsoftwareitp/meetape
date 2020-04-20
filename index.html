@@ -6,6 +6,7 @@
     <title>Meetape</title>
 
     <link rel="stylesheet" href="./src/css/main.css" >
+    <link rel="stylesheet" href="./src/css/responsive.css" >
 </head>
 <body>
     <header class="header">
@@ -14,11 +15,11 @@
                 <h1>MEETAPE</h1>
             </div>
             <ul class="nav-links">
-                <li class="item-nav"><a class="nav-link" href="#">Item</a></li>
-                <li class="item-nav"><a class="nav-link" href="#">Item</a></li>  
-                <li class="item-nav"><a class="nav-link" href="#">Item</a></li>  
-                <li class="item-nav"><a class="nav-link" href="#">Item</a></li>  
-                <li class="item-nav"><a class="nav-link" href="#">Item</a></li>    
+                <li class="item-nav"><a class="nav-link" href="#">Ministrar</a></li>
+                <li class="item-nav"><a class="nav-link" href="#">Atividades</a></li>  
+                <li class="item-nav"><a class="nav-link" href="#">Palestrantes</a></li>  
+                <li class="item-nav"><a class="nav-link" href="#">Local</a></li>  
+                <li class="item-nav"><a class="nav-link" href="#">Sobre</a></li>    
             </ul>
             
             <div class="icon-toggle">
@@ -31,12 +32,13 @@
 
         <section class="hero">
             <div class="hero-logo">
-                <img class="img-fluid" src="./src/images/logo.png" alt="Logo do evento Meetape">
-
+                <img class="img-fluid event-image" src="./src/images/logo.png" alt="Logo do evento Meetape">
             </div>
 
             <div class="hero-text">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea itaque qui velit aliquid iure deleniti sint ut nihil doloribus, repellendus, delectus voluptatum eos cum labore ipsa quam sunt laboriosam voluptatibus!</p>
+                <p> Está Chegando!<br> 
+                    <span id="dia"></span> : <span id="hora"></span> : <span id="minuto"></span> : <span id="segundo"></span>
+                </p>
 
             </div>
         </section>
@@ -45,20 +47,20 @@
 
 
     <section class="about">
-        <h1 class="section-title text-center">Sobre o Evento</h1>
+        <h1 class="section-title text-center ">Sobre o Evento</h1>
         <div class="grid-container-2">
             <p class="text-section">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatem mollitia qui error praesentium voluptate beatae aspernatur saepe accusantium enim ipsam quas sint nobis, obcaecati libero quia at repellat odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quas, illum nobis, officiis, perferendis expedita autem doloribus vel suscipit aperiam delectus numquam adipisci aspernatur. Ullam voluptates ab reiciendis ipsa nisi!
             </p>
 
-            <img class="img-fluid" src="src/images/img-about.svg">
+            <img class="img-fluid image-section img-center" src="src/images/img-about.svg">
 
 
         </div>
     </section>
 
     <section class="acitivity text-white bg-purple">
-        <h1 class="section-title text-center"> Atividades</h1>
+        <h1 class="section-title text-center "> Atividades</h1>
         <div class="card-group-in-row">
             <div class="card">
                 <p class="card-text">Card com atividades do evento</p>
@@ -75,7 +77,7 @@
         </div>
     </section>
     <section class="panelist">
-        <h1 class="section-title text-center">Palestrantes Confirmados</h1>
+        <h1 class="section-title text-center">Palestrantes</h1>
 
         <div class="grid-container-2">
                 <div class="card-group">
@@ -93,7 +95,7 @@
                     </div>
                 </div>
 
-            <img class="img-fluid" src="src/images/img-panelist.svg">
+            <img class="img-fluid image-section img-center" src="src/images/img-panelist.svg">
 
 
         </div>
@@ -104,7 +106,7 @@
 
         <div class="grid-container-2">
 
-            <img class="img-fluid" src="src/images/img-event-locale.svg">
+            <img class="img-fluid image-section img-center" src="src/images/img-event-locale.svg">
 
             <div class="text-section event-adress">
                     <iframe
@@ -119,7 +121,7 @@
     </section>
 
     <section class="event-lecturer panelist">
-        <h1 class="section-title text-center"> Gostaria de ministrar uma palestra?</h1>
+        <h1 class="section-title text-center"> Ministrar uma palestra?</h1>
         <div class="grid-container-2">
             <div class="form-lecture">
                 <h2 class="text-center text-margin">Formulário</h2>
@@ -138,7 +140,7 @@
                 </div>
             </form>
             </div>
-            <img class="img-fluid" src="src/images/img-about.svg">
+            <img class="img-fluid image-section" src="src/images/img-about.svg">
         </div>
     </section>
 
@@ -147,6 +149,8 @@
     </footer>
 
     <script src="./src/js/main.js"></script>
+    <script src="./src/js/timer.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 </body>
 </html>
 
