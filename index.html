@@ -12,14 +12,14 @@
     <header class="header">
         <nav class="nav">
             <div class="branch-logo">
-                <h1>MEETAPE</h1>
+                <h1><a href="#hero" class="link-style-none">MEETAPE</a></h1>
             </div>
             <ul class="nav-links">
-                <li class="item-nav"><a class="nav-link" href="#">Ministrar</a></li>
-                <li class="item-nav"><a class="nav-link" href="#">Atividades</a></li>  
-                <li class="item-nav"><a class="nav-link" href="#">Palestrantes</a></li>  
-                <li class="item-nav"><a class="nav-link" href="#">Local</a></li>  
-                <li class="item-nav"><a class="nav-link" href="#">Sobre</a></li>    
+                <li class="item-nav"><a class="nav-link" href="#about">Sobre</a></li>  
+                <li class="item-nav"><a class="nav-link" href="#activity">Atividades</a></li>  
+                <li class="item-nav"><a class="nav-link" href="#panelist">Palestrantes</a></li>  
+                <li class="item-nav"><a class="nav-link" href="#event-locale">Local</a></li>  
+                <li class="item-nav"><a class="nav-link" href="#event-lecturer">Ministrar</a></li>    
             </ul>
             
             <div class="icon-toggle">
@@ -30,7 +30,7 @@
         </nav>
 
 
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero-logo">
                 <img class="img-fluid event-image" src="./src/images/logo.png" alt="Logo do evento Meetape">
             </div>
@@ -46,22 +46,22 @@
     </header>
 
 
-    <section class="about">
+    <section class="about" id="about">
         <h1 class="section-title text-center ">Sobre o Evento</h1>
         <div class="grid-container-2">
-            <p class="text-section">
+            <p class="text-section animate-right">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatem mollitia qui error praesentium voluptate beatae aspernatur saepe accusantium enim ipsam quas sint nobis, obcaecati libero quia at repellat odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quas, illum nobis, officiis, perferendis expedita autem doloribus vel suscipit aperiam delectus numquam adipisci aspernatur. Ullam voluptates ab reiciendis ipsa nisi!
             </p>
 
-            <img class="img-fluid image-section img-center" src="src/images/img-about.svg">
+            <img class="img-fluid image-section img-center animate-left" src="src/images/img-about.svg">
 
 
         </div>
     </section>
 
-    <section class="acitivity text-white bg-purple">
+    <section class="acitivity text-white bg-purple" id="activity">
         <h1 class="section-title text-center "> Atividades</h1>
-        <div class="card-group-in-row">
+        <div class="card-group-in-row animate-left">
             <div class="card">
                 <p class="card-text">Card com atividades do evento</p>
             </div>
@@ -76,11 +76,12 @@
             </div>
         </div>
     </section>
-    <section class="panelist">
+
+    <section class="panelist" id="panelist">
         <h1 class="section-title text-center">Palestrantes</h1>
 
         <div class="grid-container-2">
-                <div class="card-group">
+                <div class="card-group animate-right">
                     <div class="card">
                         <p class="card-text">Palestrante</p>
                     </div>
@@ -95,20 +96,20 @@
                     </div>
                 </div>
 
-            <img class="img-fluid image-section img-center" src="src/images/img-panelist.svg">
+            <img class="img-fluid image-section img-center animate-left" src="src/images/img-panelist.svg">
 
 
         </div>
     </section>
 
-    <section class="event-locale bg-purple text-white">
+    <section class="event-locale bg-purple text-white" id="event-locale">
         <h1 class="section-title text-center">Local do Evento</h1>
 
         <div class="grid-container-2">
 
-            <img class="img-fluid image-section img-center" src="src/images/img-event-locale.svg">
+            <img class="img-fluid image-section img-center animate-right" src="src/images/img-event-locale.svg">
 
-            <div class="text-section event-adress">
+            <div class="text-section event-adress animate-left">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.2931471902366!2d-48.02073778506283!3d-23.593817384666867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5cbf41ebfcf31%3A0xa65e4fb6d75446bf!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%2C%20Campus%20Itapetininga!5e0!3m2!1spt-BR!2sbr!4v1585933087747!5m2!1spt-BR!2sbr" 
                         height="450" 
@@ -120,11 +121,12 @@
             
     </section>
 
-    <section class="event-lecturer panelist">
+    <section class="event-lecturer panelist" id="event-lecturer">
         <h1 class="section-title text-center"> Ministrar uma palestra?</h1>
         <div class="grid-container-2">
-            <div class="form-lecture">
+            <div class="form-lecture animate-right">
                 <h2 class="text-center text-margin">Formulário</h2>
+
             <form class="form" method="post" action="#">
                 <div class="form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Nome">
@@ -140,7 +142,8 @@
                 </div>
             </form>
             </div>
-            <img class="img-fluid image-section" src="src/images/img-about.svg">
+
+            <img class="img-fluid image-section animate-left" src="src/images/img-about.svg">
         </div>
     </section>
 
@@ -148,9 +151,9 @@
         <p class="text-white">Rodapé</p>
     </footer>
 
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="./src/js/main.js"></script>
     <script src="./src/js/timer.js"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 </body>
 </html>
 

@@ -57,6 +57,11 @@ ul.nav-links{
     width: 50%;
 }
 
+.link-style-none{
+    text-decoration: none; 
+    color: var(--color-green);
+}
+
 .nav-links li.item-nav a{
     text-decoration: none; 
     color: var(--color-green);
@@ -284,4 +289,21 @@ ul.nav-links{
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.animate-left{
+    opacity: 0;
+    transform: translate3d(100px,0,0);
+    transition: .3s;
+}
+
+.animate-right{
+    opacity: 0;
+    transform: translate3d(-100px,0,0);
+    transition: .3s;
+}
+
+.anime-start{
+    opacity: 1;
+    transform: translate3d(0,0,0);
 }
